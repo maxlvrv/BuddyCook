@@ -1,0 +1,37 @@
+<% include partials/header %>
+
+    <div class = "container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>BuddyCook's Recipe page!</h1>
+            <p>Click on any recipe to find a step by step guide on how to make them safely and successfully!</p>
+                <p>
+                    <!-- <a class="btn btn-primary btn-lg" href="/recipes/new">Add New Recipe</a> -->
+                        <div class="col-md-3 col-sm-3 col-xs-6"> <a href="/recipes/new" class="btn btn-sm animated-button add-new-recipe">Add New Recipe</a> </div>
+                </p>
+        </div>
+    </header>
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <div class="col-lg-12">
+            <h3 style="margin: 0 none";>Our Most Popular Recipes!</h3>
+        </div>
+                    <% recipes.forEach(function(recipe) { %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                         <img src="<%= recipe.image%>">
+                    </div>
+                        <div class="caption">
+                          <h4><%= recipe.name %></h4>
+                        </div>
+                        <p>
+                            <!-- <a href="/recipes/<%= recipe._id%>" class="btn btn-primary">Choose recipe</a> -->
+                            <div id="choose-recipe-button" class="col-md-3 col-sm-3 col-xs-6"> <a href="/recipes/<%= recipe._id%>" class="btn btn-sm animated-button choose-recipe">Choose Recipe</a> </div>
+                        </p>
+                </div>
+            <%});%>
+            </div>
+    </div>
+
+
+<% include partials/footer %>
