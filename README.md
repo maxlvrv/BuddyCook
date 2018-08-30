@@ -1,2 +1,2 @@
 # BuddyCook
-A cooking app for people with learning disabilities
+** A free and open-source web-based cooking application for people with learning disabilities
