@@ -17,3 +17,5 @@ https://cdn-learn.adafruit.com/downloads/pdf/adafruits-raspberry-pi-lesson-11-ds
 >MongoDatabase manual
 https://docs.mongodb.com/manual/
 
+
+Email: ghostysk2@gmail.com for any queries
