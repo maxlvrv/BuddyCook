@@ -1,5 +1,10 @@
 This is the  Documentation for Raspberry Pi and relevant files.
 
+Recommended Hardwares are:
+Raspberry Pi Model 3 B+
+DS18b20 waterproof temeperature sensor
+SD card with NOOBS operating system pre-installed
+
 dsfinal.py includes codes to be run by the Raspberry Pi. It should be auto run upon boot,
 guides can be foun in the reference section
 
